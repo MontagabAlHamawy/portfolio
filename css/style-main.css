@@ -1,0 +1,257 @@
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--main-color);
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+/* start header */
+.container .header {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to left,var(--main1-color) ,var(--main2-color),var(--main3-color),var(--main4-color));
+}
+
+.container .header img {
+    width: 150px;
+    position: absolute;
+    right: 5px;
+    top: -10px;
+}
+.container .header i{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 30px;
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.3s;
+}
+.container .header i:hover{
+    background-color: var(--text-color);
+    color: var(--hh);
+}
+
+/* end header */
+.container .cont {
+    display: flex;
+    height: 100%;
+}
+
+/* start sidepar */
+.container .cont .sidepar {
+    background: linear-gradient(to top,var(--main1-color),var(--main2-color),var(--main3-color),var(--main4-color));
+    flex-basis: 15%;
+    padding-left: 20px;
+}
+
+.container .cont .sidepar .gg {
+    position: absolute;
+    left: 160px;
+    top: 61px;
+    color: var(--text-color);
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container .cont .sidepar .gg:hover {
+    background-color: var(--text-color);
+    color: var(--hh);
+}
+
+.container .cont .sidepar .dds {
+    margin-top: 50px;
+}
+
+.container .cont .sidepar .e {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    transition: 0.5s;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left: 7px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.container .cont .sidepar .e:hover ,
+.container .cont .sidepar .e.active {
+    background-color: var(--text-color);
+    color: var(--hh);
+    margin-left: 30px;
+    margin-right: 0;
+}
+.container .cont .sidepar .pp{
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.container .cont .sidepar .pp:hover,
+.container .cont .sidepar .pp.active  {
+    background-color: var(--text-color);
+    color: var(--hh);
+    margin-left: 20px;
+    margin-right: 10px;
+    width: max-content;
+    text-align: center;
+}
+
+
+.container .cont .sidepar .e:hover i,
+.container .cont .sidepar .e:hover p,
+.container .cont .sidepar .e i.active,
+.container .cont .sidepar .e p.active  {
+    color: var(--hh);
+}
+
+.container .cont .sidepar .e i {
+    color: var(--text-color);
+    font-size: 30px;
+    margin-right: 20px;
+}
+.container .cont .sidepar .pp  i{
+    margin-right: 0;
+}
+
+.container .cont .sidepar .e p {
+    color: var(--text-color);
+    font-size: 20px;
+}
+.fg{
+    position: absolute;
+    left: 160px;
+    top: 61px;
+    color: var(--text-color);
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: none;
+}
+
+/* end sidepar */
+
+.container .cont .contrr {
+    background-color: var(--if-color);
+    flex-basis: 85%;
+    height: 90vh;
+}
+.container .cont .contrr iframe{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:1024px) {
+    /* .container .cont {
+        display: block;
+    } */
+    .fg{
+        display: block;
+    }
+
+    .container .sidepar {
+        position: absolute;
+        top: 60px;
+        left: -300px;
+        height: 95vh;
+        }
+    .ccd{
+        position: absolute;
+        bottom: 0px;
+        z-index: 1000;
+        background-color: var(--hh);
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .container .ddss {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 40px 0;
+        
+    }  
+       
+    .container .ddss .e1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 113px;
+        transition: 0.5s;
+        border-radius: 10px;
+    }
+    .container .ddss .e1:hover,
+    .container .ddss .e1.active{
+        background-color: var(--text-color);
+        padding-top: 10px;
+    }
+    .container .ddss .e1:hover i,
+    .container .ddss .e1:hover p,
+    .container .ddss .e1 i.active,
+    .container .ddss .e1 p.active{
+        color: var(--hh);
+    }
+    
+    .container .ddss .e1 i {
+        color: var(--text-color);
+        font-size: 20px;
+    }
+    
+    .container .ddss .e1 p {
+        color: var(--text-color);
+        font-size: 13px;
+    }
+
+    .container .cont .contrr {
+        margin-right: 0px;
+        flex-basis: 100%;
+    }
+    .container .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .header img{
+        position: relative;
+        top: 2px;
+    }
+    .container .gg{
+        display: none;
+    }
+}
+@media (max-width:700px) {
+    .container .ddss .e1{
+        width: 80px;
+    }
+    .container .ddss .e1 i {
+        color: var(--text-color);
+        font-size: 13px;
+    }
+    
+    .container .ddss .e1 p {
+        color: var(--text-color);
+        font-size: 10px;
+    }
+    .container .ddss{
+        padding: 5px 5px 0 10px;
+    }
+    .container .cont .contrr{
+        height: 95vh;
+    }
+}

@@ -1,0 +1,25 @@
+:root {
+    --main1-color: #0d245d;
+    --main2-color: #163b7a;
+    --main3-color: #22589c;
+    --main4-color: #327ac2;
+    --hh:#245ca0;
+    --ss:#4b55dc;
+    --text-color: #d3d3d3;
+    --if-color:#ececec;
+    --back-colo:#18191a;
+    --t-color: #212326;
+    --fog:#3075bc;
+}
+.light-them{
+    --main1-color: #0d245d;
+    --main2-color: #163b7a;
+    --main3-color: #22589c;
+    --main4-color: #327ac2;
+    --text-color: #d3d3d3;
+    --t-color: #c7c9d3;
+    --hh:#245ca0;
+    --ss:#4b55dc;
+    --back-colo:#d3d3d3;
+    --if-color:#18191a;
+}
